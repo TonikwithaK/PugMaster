@@ -100,7 +100,8 @@ const command: Command = {
 
         let fieldData;
         if (dump) {
-            fieldData = fieldDataComplete;
+
+            fieldData = fieldDataComplete.slice(0, 100);
             // make fieldDataComplete a nested arry of 10 elements.
             const fieldDataNested = [];
             for (let i = 0; i < fieldDataComplete.length; i += 10) {
